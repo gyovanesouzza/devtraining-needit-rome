@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>email</internal_name>
+        <label_cache>[{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>e93615a70712301024d9fbbf7c1ed00b</master_snapshot>
+        <name>email</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id>f53615a70712301024d9fbbf7c1ed02f</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:06:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>23b591a30712301024d9fbbf7c1ed061</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_23b591a30712301024d9fbbf7c1ed061</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=23b591a30712301024d9fbbf7c1ed061"/>
+    <sys_variable_value action="delete_multiple" query="document_key=23b591a30712301024d9fbbf7c1ed061"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2021-09-05 23:08:37</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f53615a70712301024d9fbbf7c1ed02f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <time>1970-01-02 04:10:00</time>
+        <timer_type>11</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:f53615a70712301024d9fbbf7c1ed02f^sys_idNOT IN3d3615a70712301024d9fbbf7c1ed02f"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <name>Trigger:f53615a70712301024d9fbbf7c1ed02f</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2021-09-05 23:08:37</run_start>
+        <run_time>1970-01-02 04:10:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('f53615a70712301024d9fbbf7c1ed02f');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:37</sys_created_on>
+        <sys_id>3d3615a70712301024d9fbbf7c1ed02f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">f53615a70712301024d9fbbf7c1ed02f</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=23b591a30712301024d9fbbf7c1ed061^sys_idNOT INd036d1a70712301024d9fbbf7c1ed06d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="email">23b591a30712301024d9fbbf7c1ed061</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:30</sys_created_on>
+        <sys_id>d036d1a70712301024d9fbbf7c1ed06d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d036d1a70712301024d9fbbf7c1ed06d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d036d1a70712301024d9fbbf7c1ed06d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:30</sys_created_on>
+        <sys_id>5836d1a70712301024d9fbbf7c1ed06d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:30</sys_updated_on>
+        <value>1970-01-01 20:10:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=23b591a30712301024d9fbbf7c1ed061^sys_idNOT INe3b591a30712301024d9fbbf7c1ed063"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>23b591a30712301024d9fbbf7c1ed061</id>
+        <name>email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:06:33</sys_created_on>
+        <sys_id>e3b591a30712301024d9fbbf7c1ed063</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:06:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=23b591a30712301024d9fbbf7c1ed061^sys_idNOT IN9036d1a70712301024d9fbbf7c1ed074"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="email">23b591a30712301024d9fbbf7c1ed061</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:31</sys_created_on>
+        <sys_id>9036d1a70712301024d9fbbf7c1ed074</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <ui_id>f8fc1222-e345-4331-8249-ab7ec9c50d10</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9036d1a70712301024d9fbbf7c1ed074"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9036d1a70712301024d9fbbf7c1ed074</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:31</sys_created_on>
+        <sys_id>5436d1a70712301024d9fbbf7c1ed076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:31</sys_updated_on>
+        <value>Relatorio Teste</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>9036d1a70712301024d9fbbf7c1ed074</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:31</sys_created_on>
+        <sys_id>9036d1a70712301024d9fbbf7c1ed076</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:31</sys_updated_on>
+        <value>gyovanesouzza@outlook.com.br</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb^id=9036d1a70712301024d9fbbf7c1ed074"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=23b591a30712301024d9fbbf7c1ed061^sys_idNOT INce3615a70712301024d9fbbf7c1ed031"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>23b591a30712301024d9fbbf7c1ed061</plan_id>
+        <snapshot>e93615a70712301024d9fbbf7c1ed00b</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ce3615a70712301024d9fbbf7c1ed031</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <trigger display_value="">f53615a70712301024d9fbbf7c1ed02f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>email</internal_name>
+        <label_cache>[{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.__dont_treat_as_error__","label":"1➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.__action_status__","label":"1➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"f8fc1222-e345-4331-8249-ab7ec9c50d10.email","label":"1➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>email</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="email">23b591a30712301024d9fbbf7c1ed061</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e93615a70712301024d9fbbf7c1ed00b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e93615a70712301024d9fbbf7c1ed00b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e93615a70712301024d9fbbf7c1ed00b"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e93615a70712301024d9fbbf7c1ed00b^sys_idNOT IN213615a70712301024d9fbbf7c1ed017"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="email">e93615a70712301024d9fbbf7c1ed00b</flow>
+        <name>Daily</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>213615a70712301024d9fbbf7c1ed017</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:37</sys_updated_on>
+        <trigger_definition display_value="Daily">89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>daily</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=213615a70712301024d9fbbf7c1ed017"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>213615a70712301024d9fbbf7c1ed017</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>b53615a70712301024d9fbbf7c1ed017</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+        <value>1970-01-01 20:10:00</value>
+        <variable display_value="Time">3ad4edc0c32222002841b63b12d3aee5</variable>
+    </sys_variable_value>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e93615a70712301024d9fbbf7c1ed00b^sys_idNOT INa13615a70712301024d9fbbf7c1ed00c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e93615a70712301024d9fbbf7c1ed00b</id>
+        <name>email</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>a13615a70712301024d9fbbf7c1ed00c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e93615a70712301024d9fbbf7c1ed00b^sys_idNOT IN693615a70712301024d9fbbf7c1ed014"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment/>
+        <compiled_snapshot>c1806bf4a70323008299b39f087901cb</compiled_snapshot>
+        <display_text/>
+        <flow display_value="email">e93615a70712301024d9fbbf7c1ed00b</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>693615a70712301024d9fbbf7c1ed014</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+        <ui_id>f8fc1222-e345-4331-8249-ab7ec9c50d10</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=693615a70712301024d9fbbf7c1ed014"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>693615a70712301024d9fbbf7c1ed014</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>2d3615a70712301024d9fbbf7c1ed016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+        <value>Relatorio Teste</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>693615a70712301024d9fbbf7c1ed014</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-09-05 23:08:36</sys_created_on>
+        <sys_id>693615a70712301024d9fbbf7c1ed016</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-09-05 23:08:36</sys_updated_on>
+        <value>gyovanesouzza@outlook.com.br</value>
+        <variable display_value="To">59806bf4a70323008299b39f087901da</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb^id=693615a70712301024d9fbbf7c1ed014"/>
+    <sys_hub_flow action="update">
+        <sys_id>23b591a30712301024d9fbbf7c1ed061</sys_id>
+        <latest_snapshot>e93615a70712301024d9fbbf7c1ed00b</latest_snapshot>
+    </sys_hub_flow>
+</record_update>
